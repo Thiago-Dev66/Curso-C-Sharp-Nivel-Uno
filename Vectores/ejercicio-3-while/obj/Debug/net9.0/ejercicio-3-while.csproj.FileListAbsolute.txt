@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\bin\Debug\net9.0\ejercicio-3-while.exe
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\bin\Debug\net9.0\ejercicio-3-while.deps.json
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\bin\Debug\net9.0\ejercicio-3-while.runtimeconfig.json
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\bin\Debug\net9.0\ejercicio-3-while.dll
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\bin\Debug\net9.0\ejercicio-3-while.pdb
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.dll
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\refint\ejercicio-3-while.dll
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.pdb
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ejercicio-3-while.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\vectores\ejercicio-3-while\obj\Debug\net9.0\ref\ejercicio-3-while.dll

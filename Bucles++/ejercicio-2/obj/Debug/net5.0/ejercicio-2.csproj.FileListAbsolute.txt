@@ -1,0 +1,32 @@
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.AssemblyInfo.cs
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.exe
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.deps.json
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.runtimeconfig.json
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.runtimeconfig.dev.json
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.dll
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ref\ejercicio-2.dll
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.pdb
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.dll
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ref\ejercicio-2.dll
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.pdb
+C:\Users\pc\Desktop\Curso C# Nivel uno\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.exe
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.deps.json
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.runtimeconfig.json
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.dll
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\bin\Debug\net5.0\ejercicio-2.pdb
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.dll
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\refint\ejercicio-2.dll
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.pdb
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ejercicio-2.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Curso C Sharp nivel 1\ciclos++\ejercicio-2\obj\Debug\net5.0\ref\ejercicio-2.dll
