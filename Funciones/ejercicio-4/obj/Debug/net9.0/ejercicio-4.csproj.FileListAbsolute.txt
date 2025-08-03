@@ -12,3 +12,18 @@ C:\Users\Usuario\Desktop\curso c Sharp nivel 1\funciones\ejercicio-4\obj\Debug\n
 C:\Users\Usuario\Desktop\curso c Sharp nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.pdb
 C:\Users\Usuario\Desktop\curso c Sharp nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\curso c Sharp nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ref\ejercicio-4.dll
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\bin\Debug\net9.0\ejercicio-4.exe
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\bin\Debug\net9.0\ejercicio-4.deps.json
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\bin\Debug\net9.0\ejercicio-4.runtimeconfig.json
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\bin\Debug\net9.0\ejercicio-4.dll
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\bin\Debug\net9.0\ejercicio-4.pdb
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.sourcelink.json
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.dll
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\refint\ejercicio-4.dll
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.pdb
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ejercicio-4.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\curso c# nivel 1\funciones\ejercicio-4\obj\Debug\net9.0\ref\ejercicio-4.dll

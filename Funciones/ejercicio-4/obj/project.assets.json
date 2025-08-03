@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Curso C Sharp nivel 1\\funciones\\ejercicio-4\\ejercicio-4.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\curso c# nivel 1\\funciones\\ejercicio-4\\ejercicio-4.csproj",
       "projectName": "ejercicio-4",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Curso C Sharp nivel 1\\funciones\\ejercicio-4\\ejercicio-4.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\curso c# nivel 1\\funciones\\ejercicio-4\\ejercicio-4.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Curso C Sharp nivel 1\\funciones\\ejercicio-4\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\curso c# nivel 1\\funciones\\ejercicio-4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
