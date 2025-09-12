@@ -1,4 +1,4 @@
-﻿namespace ejercicio_1;
+﻿namespace ejercicio_2;
 
 class Program
 {
