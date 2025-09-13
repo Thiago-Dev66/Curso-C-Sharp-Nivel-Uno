@@ -19,7 +19,7 @@ class Program
             cliente igual a cero.
             Se pide:
                 a) Un listado con el siguiente formato:
-                Código de Artículo - Cantidad Total Vendida
+                Código de Artículo - Cantidad Total Vendida (Monto en $)
                 999                  999
                 Este listado debe salir ordenado de mayor a menor por cantidad total vendida.
                 b) Informar, si los hubiera, los nombres de los meses en que no hubo ventas.
@@ -38,11 +38,18 @@ class Program
             precioUnitario[x] = int.Parse(Console.ReadLine());
         }
 
-        int[] acuCantidadTotal = new int[20];
+        double promedio = 0;
+        int[] acuVentasCantidad = new int[20];
+        int[] acuMontoTotal = new int[20];
         int[] boolVentaMes = new int[12];
         int[] meses = new int[12];
         string[] mesesLiteral = new string[12] {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
+        for (int x = 0; x < 12; x++)
+        {
+            boolVentaMes[x] = 0;
+        }
 
         for (int x = 0; x < 12; x++)
         {
@@ -72,9 +79,8 @@ class Program
             for (int x = 0; x < 20; x++)
             {
                 if (codArticulo == codigoArticulo[x])
-                    acuCantidadTotal[x] += cantidadVendida;
+                    acuMontoTotal[x] += cantidadVendida * precioUnitario[x];
             }
-            OrdenarVectorMayorAMenor(acuCantidadTotal, codigoArticulo);
 
             //Punto b:
 
@@ -84,10 +90,14 @@ class Program
                 {
                     boolVentaMes[x] = 1;
                 }
-                else
-                {
-                    boolVentaMes[x] = 0;
-                }
+            }
+
+            //Punto c:
+    
+            for (int x = 0; x < 20; x++)
+            {
+                if (codArticulo == codigoArticulo[x])
+                    acuVentasCantidad[x] += cantidadVendida;
             }
 
             Console.WriteLine("Numero de cliente:");
@@ -97,10 +107,12 @@ class Program
         //Egreso de informacion:
         //Parte a:
 
+        OrdenarVectorMayorAMenor(acuMontoTotal, codigoArticulo);
+
         Console.WriteLine("Articulos y cantidad total vendida:");
         for (int x = 0; x < 20; x++)
         {
-            Console.WriteLine($"{codigoArticulo[x]} - {acuCantidadTotal[x]}");
+            Console.WriteLine($"{codigoArticulo[x]} - {acuMontoTotal[x]}");
         }
 
         //Parte b:
@@ -112,10 +124,29 @@ class Program
                 Console.WriteLine("En el mes de " + mesesLiteral[x] + " no hubieron ventas");
             }
         }
+
+        //Parte c:
+
+        Console.WriteLine("Articulos cuyas ventas fueron mayores al promedio: ");
+
+        for (int x = 0; x < 20; x++)
+        {
+            promedio += acuVentasCantidad[x];
+        }
+
+        promedio /= 20;
+
+        for (int x = 0; x < 20; x++)
+        {
+            if (acuVentasCantidad[x] > promedio)
+            {
+                Console.WriteLine(codigoArticulo[x]);
+            }
+        }
     }
 
     //Punto a:
-    static void OrdenarVectorMayorAMenor(int[] acuCantidadTotal, int[] codigoArticulo)
+    static void OrdenarVectorMayorAMenor(int[] acuMontoTotal, int[] codigoArticulo)
     {
         int aux;
 
@@ -123,11 +154,11 @@ class Program
         {
             for (int y = 0; y < 19; y++)
             {
-                if (acuCantidadTotal[y] < acuCantidadTotal[y + 1])
+                if (acuMontoTotal[y] < acuMontoTotal[y + 1])
                 {
-                    aux = acuCantidadTotal[y];
-                    acuCantidadTotal[y] = acuCantidadTotal[y + 1];
-                    acuCantidadTotal[y + 1] = aux;
+                    aux = acuMontoTotal[y];
+                    acuMontoTotal[y] = acuMontoTotal[y + 1];
+                    acuMontoTotal[y + 1] = aux;
 
                     aux = codigoArticulo[y];
                     codigoArticulo[y] = codigoArticulo[y + 1];
