@@ -23,50 +23,51 @@ class Program
         a) Un listado de las ventas realizadas, con el siguiente formato:
 
         Listado de ventas
-
         Nro. Cliente Nro. Artículo Cantidad Vendida Importe Total
-        99 99 999 999.99
+        99           99            999              999.99
         b) Informar cuál es el número de cliente que más compró en total (en pesos).
         c) Informar cada uno de los números de los artículos que no hayan registrado ventas.*/
 
         int[] numArticulos = new int[300];
-        int[] cantidadUnidadesVendidias = new int[300];
+        int[] cantidadUnidadesEnStock = new int[300];
         int[] precioUnitario = new int[300];
 
-
-        for (int x = 0; x < 300; x++) {
+        //Lote uno:
+        
+        for (int x = 0; x < 300; x++)
+        {
 
             Console.WriteLine("Ingrese numero de articulo");
             numArticulos[x] = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese cantidad vendida");
-            cantidadUnidadesVendidias[x] = int.Parse(Console.ReadLine());
+            cantidadUnidadesEnStock[x] = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese precio unitario");
             precioUnitario[x] = int.Parse(Console.ReadLine());
-    
+
         }
+
+        int[] importeTotal = new int[300];
 
         Console.WriteLine("Ingrese numero de cliente");
         int nDeCliente = int.Parse(Console.ReadLine());
-        Console.WriteLine("Ingrese numero de cliente");
-        int numArticulo = int.Parse(Console.ReadLine());
-        Console.WriteLine("Ingrese numero de cliente");
-        int cantUniVen = int.Parse(Console.ReadLine());
+        
+        //Lote dos:
 
-        int[] numeroDeCliente = new int[300];
-        int[] cantUniVendidas = new int[300];
-        int[] numArt = new int[300];
-        int[] importeTotal = new int[300];
-
-        int indice = 0;
-
-        while(nDeCliente != 0)
+        while (nDeCliente != 0)
         {
+            //Ingreso de datos:
+            Console.WriteLine("Ingrese numero de articulo");
+            int numArticulo = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese cantidad vendida");
+            int cantUniVen = int.Parse(Console.ReadLine());
 
+            //Parte a:
+            
             for (int x = 0; x < 300; x++)
             {
-                if(numArticulos[x] == numArt[x])
+                if (numArticulo == numArticulos[x])
                 {
-                    importeTotal[indice] = precioUnitario[x] * cantUniVendidas[x];
+                    importeTotal[x] = precioUnitario[x] * cantUniVen;
                 }
             }
 
@@ -78,11 +79,6 @@ class Program
 
             Console.WriteLine("Ingrese numero de cliente");
             nDeCliente = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese numero de articulo");
-            numArticulo = int.Parse(Console.ReadLine());
-            Console.WriteLine("Ingrese cantidad de unidades vendidas");
-            cantUniVen = int.Parse(Console.ReadLine());
-
         }
 
         int max = importeTotal[0];
