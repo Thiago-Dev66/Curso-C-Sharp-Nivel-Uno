@@ -1,4 +1,6 @@
-﻿namespace ejercicio_4
+﻿using System.Diagnostics.Tracing;
+
+namespace ejercicio_4
 {
     class Program
     {
@@ -37,7 +39,7 @@
 
             //Primer lote:
 
-            for (int x = 30; x < 30; x++)
+            for (int x = 0; x < 30; x++)
             {
                 Console.WriteLine("Ingrese numeor de camion");
                 numeroCamion[x] = int.Parse(Console.ReadLine());
@@ -54,16 +56,16 @@
             int[] menorCantPiezasRotas = new int[30];
             int[] dias = new int[31];
 
-            for (int x = 31; x < 31; x++)
+            for (int x = 0; x < 31; x++)
             {
-                dias[x] = x;
+                dias[x] = 0;
             }
 
-            int[] banderas = new int[30];
+            bool[] banderas = new bool[31];
 
-            for (int x = 30; x < 30; x++)
+            for (int x = 0; x < 31; x++)
             {
-                banderas[x] = 0;
+                banderas[x] = false;
             }
 
             //Variables parte b:
@@ -71,17 +73,17 @@
             double mayorKmRecorrido;
 
             //Variables parte c:
-            double[] PromediosQ1 = new double[30];
-            double[] PromediosQ2 = new double[30];
-            int[] PiezasRotasPorQ1 = new int[30];
-            int[] PiezasRotasPorQ2 = new int[30];
+            double[] promediosQ1 = new double[30];
+            double[] promediosQ2 = new double[30];
+            int[] piezasRotasPorQ1 = new int[30];
+            int[] piezasRotasPorQ2 = new int[30];
             int[] contViajesQ1 = new int[30];
             int[] contViajesQ2 = new int[30];
 
-            for (int x = 30; x < 30; x++)
+            for (int x = 0; x < 30; x++)
             {
-                contViajesQ1[x] = x;
-                contViajesQ2[x] = x;
+                contViajesQ1[x] = 0;
+                contViajesQ2[x] = 0;
             }
 
             //Ingreso de datos:
@@ -102,27 +104,8 @@
 
                 //Punto a:
 
-                for (int y = 0; y < 31; y++)
-                {
-                    if (dias[y] == dia)
-                    {
-                        for (int x = 0; x < 30; x++)
-                        {
-                            if (codChofer == codigoChofer[x] && cantKmRecorridosPorViaje > 0.00)
-                            {
-                                if (banderas[y] == 0)
-                                {
-                                    menorCantPiezasRotas[x] = cantPiezasRotasPorViaje;
-                                    banderas[y] = 1;
-                                }
-                                else if (cantPiezasRotasPorViaje < menorCantPiezasRotas[x])
-                                {
-                                    menorCantPiezasRotas[x] = cantPiezasRotasPorViaje;
-                                }
-                            }
-                        }
-                    }
-                }
+                MenorCantidadDePiezasRotasPorViaje(dia, codChofer, cantKmRecorridosPorViaje, cantPiezasRotasPorViaje,
+                    dias, codigoChofer, banderas, menorCantPiezasRotas);
 
                 //Punto b:
 
@@ -136,23 +119,8 @@
 
                 //Punto c:
 
-                for (int x = 0; x < 30; x++)
-                {
-                    if (codChofer == codigoChofer[x])
-                    {
-                        if (dia > 0 && dia < 16)
-                        {
-                            contViajesQ1[x]++;
-                            PiezasRotasPorQ1[x] = cantPiezasRotasPorViaje;
-                        }
-
-                        if (dia > 15 && dia < 32)
-                        {
-                            contViajesQ2[x]++;
-                            PiezasRotasPorQ2[x] = cantPiezasRotasPorViaje;
-                        }
-                    }
-                }
+                PromediosPorQuincena(codChofer, dia, cantPiezasRotasPorViaje,
+                    codigoChofer, contViajesQ1, contViajesQ2, piezasRotasPorQ1, piezasRotasPorQ2);
 
                 Console.WriteLine("Ingrese dia: ");
                 dia = int.Parse(Console.ReadLine());
@@ -165,34 +133,99 @@
 
             for (int x = 0; x < 30; x++)
             {
-                dias[x];
-                codigoChofer[x];
-                menorCantPiezasRotas[x];
+                Console.WriteLine($"Codigo de chofer: {codigoChofer[x]}");
+                Console.WriteLine($"Dias: {dias[x]}");
+                Console.WriteLine($"Menor cantidad de piezas rotas: {menorCantPiezasRotas[x]}");
             }
 
             //Parte b:
-            //Informar número de camión y el chófer que lo conduce
 
+            int choferMayorKmRecorrido = 0;
             mayorKmRecorrido = acuMayorCantKm[0];
 
-            for (int x = 0; x < 30; x++)
+            for (int x = 0; x < 29; x++)
             {
-                if (acuMayorCantKm [ x+1 ] > mayorKmRecorrido)
+                if (acuMayorCantKm[x + 1] > mayorKmRecorrido)
                 {
                     mayorKmRecorrido = acuMayorCantKm[x];
+                    choferMayorKmRecorrido = codigoChofer[x];
                 }
             }
 
-            //Parte c:
+            Console.WriteLine($"El camion que recorrio mayor cantidad de Km es: {mayorKmRecorrido} ");
+            Console.WriteLine($"Y el chofer que lo conduce es {choferMayorKmRecorrido}");
 
-            int sumaQ1;
-            int sumaQ2;
+            //Parte c:
 
             for (int x = 0; x < 30; x++)
             {
-                sumaQ1 += PiezasRotasPorQ1[x];
-                sumaQ2 += PiezasRotasPorQ2[x];
-            }     
+                promediosQ1[x] = piezasRotasPorQ1[x] / contViajesQ1[x];
+                promediosQ2[x] = piezasRotasPorQ2[x] / contViajesQ2[x];
+            }
+
+            Console.WriteLine("Promedio de piezas rotas en los viajes realizados en la primera quincena: ");
+
+            for (int x = 0; x < 30; x++)
+            {
+                Console.WriteLine($"{codigoChofer[x]}, {promediosQ1[x]}");
+            }
+
+            Console.WriteLine("Promedio de piezas rotas en los viajes realizados en la segunda quincena: ");
+
+            for (int x = 0; x < 30; x++)
+            {
+                Console.WriteLine($"{codigoChofer[x]}, {promediosQ2[x]}");
+            }
+
+        }
+
+        static void MenorCantidadDePiezasRotasPorViaje
+        (
+            int dia, int codChofer, double cantKmRecorridosPorViaje, int cantPiezasRotasPorViaje,
+            int[] dias, int[] codigoChofer, bool[] banderas, int[] menorCantPiezasRotas
+        )
+        {
+            for (int y = 0; y < 31; y++)
+            {
+                if (dias[y] == dia)
+                {
+                    for (int x = 0; x < 30; x++)
+                    {
+                        if (codChofer == codigoChofer[x] && cantKmRecorridosPorViaje > 0.00)
+                        {
+                            if (banderas[y] == false)
+                            {
+                                menorCantPiezasRotas[x] = cantPiezasRotasPorViaje;
+                                banderas[y] = true;
+                            }
+                            else if (cantPiezasRotasPorViaje < menorCantPiezasRotas[x])
+                            {
+                                menorCantPiezasRotas[x] = cantPiezasRotasPorViaje;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        static void PromediosPorQuincena(int codChofer, int dia, int cantPiezasRotasPorViaje,
+            int[] codigoChofer, int[] contViajesQ1, int[] contViajesQ2, int[] piezasRotasPorQ1, int[] piezasRotasPorQ2)
+        {
+            for (int x = 0; x < 30; x++)
+            {
+                if (codChofer == codigoChofer[x])
+                {
+                    if (dia > 0 && dia < 16)
+                    {
+                        contViajesQ1[x]++;
+                        piezasRotasPorQ1[x] += cantPiezasRotasPorViaje;
+                    }
+                    if (dia > 15 && dia < 32)
+                    {
+                        contViajesQ2[x]++;
+                        piezasRotasPorQ2[x] += cantPiezasRotasPorViaje;
+                    }
+                }
+            }
         }
     }
 }
